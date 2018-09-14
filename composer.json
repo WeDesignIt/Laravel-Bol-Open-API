@@ -16,5 +16,12 @@
     "psr-4": {
       "WeDesignIt\\LaravelBolOpenApi\\": "src/"
     }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "WeDesignIt\\LaravelBolOpenApi\\BolOpenApiServiceProvider"
+      ]
+    }
   }
 }
