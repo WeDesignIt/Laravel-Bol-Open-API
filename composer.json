@@ -1,7 +1,6 @@
 {
   "name": "wedesignit/laravel-bol-open-api",
   "description": "Laravel connector for the bol.com Open API client",
-  "type": "library",
   "license": "MIT",
   "authors": [
     {
