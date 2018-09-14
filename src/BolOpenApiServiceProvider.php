@@ -15,7 +15,7 @@ class BolOpenApiServiceProvider extends ServiceProvider
 	public function boot()
 	{
 		$this->publishes([
-			__DIR__ . '/bol-open-api.php' => config_path('bol-open-api.php'),
+			__DIR__ . '/config/bol-open-api.php' => config_path('bol-open-api.php'),
 		]);
 	}
 
