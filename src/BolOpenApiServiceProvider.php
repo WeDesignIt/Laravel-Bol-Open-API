@@ -7,6 +7,14 @@ use Illuminate\Support\ServiceProvider;
 
 class BolOpenApiServiceProvider extends ServiceProvider
 {
+
+	/**
+	 * Indicates if loading of the provider is deferred.
+	 *
+	 * @var bool
+	 */
+	protected $defer = true;
+
 	/**
 	 * Bootstrap the application services.
 	 *
@@ -15,7 +23,7 @@ class BolOpenApiServiceProvider extends ServiceProvider
 	public function boot()
 	{
 		$this->publishes([
-			__DIR__ . '/config/bol-open-api.php' => config_path('bol-open-api.php'),
+			__DIR__ . '/config/bol-open-api.php' => config_path('bol-open-api.php'), 'config',
 		]);
 	}
 
