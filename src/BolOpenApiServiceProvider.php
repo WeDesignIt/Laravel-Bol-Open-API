@@ -28,9 +28,8 @@ class BolOpenApiServiceProvider extends ServiceProvider
 
 		// use the vendor configuration file as fallback
 		$this->mergeConfigFrom(
-			__DIR__.'/config/bol-open-api.php.php', 'bol-open-api'
+			__DIR__.'/config/bol-open-api.php', 'bol-open-api'
 		);
-
 	}
 
 	/**
