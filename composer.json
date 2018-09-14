@@ -1,0 +1,16 @@
+{
+  "name": "wedesignit/laravel-bol-open-api",
+  "description": "Laravel connector for the bol.com Open API client",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Patrick van Kouteren",
+      "email": "info@wedesignit.nl"
+    }
+  ],
+  "require": {
+    "laravel/framework": "~5.5",
+    "bolcom/bolcom-openapi-php-client": "~2.3"
+  }
+}
