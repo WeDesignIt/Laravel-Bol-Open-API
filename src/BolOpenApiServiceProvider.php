@@ -23,8 +23,14 @@ class BolOpenApiServiceProvider extends ServiceProvider
 	public function boot()
 	{
 		$this->publishes([
-			__DIR__ . '/config/bol-open-api.php' => config_path('bol-open-api.php'), 'config',
-		]);
+			__DIR__.'/config/bol-open-api.php' => config_path('bol-open-api.php'),
+		], 'config');
+
+		// use the vendor configuration file as fallback
+		$this->mergeConfigFrom(
+			__DIR__.'/config/bol-open-api.php.php', 'bol-open-api'
+		);
+
 	}
 
 	/**
